@@ -21,7 +21,8 @@ license_file "https://raw.githubusercontent.com/sparklemotion/nokogiri/master/LI
 skip_transitive_dependency_licensing true
 
 dependency "ruby"
-version "1.6.8.rc2"
+default_version "1.8.0"
+version "1.8.0"
 
 using_prebuilt_ruby = windows? && (project.overrides[:ruby].nil? || project.overrides[:ruby][:version] == "ruby-windows")
 unless using_prebuilt_ruby
